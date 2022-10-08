@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from .models import News, Category
 from .forms import NewsForm
 
@@ -36,7 +36,12 @@ def views_news(request, news_id):
 
 def add_news(request):
     if request.method == 'POST':
-        ...
+        form = NewsForm(request.POST)
+        if form.is_valid():
+            # print(form.cleaned_data)
+            # news = News.objects.create(**form.cleaned_data)
+            news = form.save()
+            return redirect(news)
     else:
         form = NewsForm()
     return render(
