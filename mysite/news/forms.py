@@ -15,7 +15,8 @@ from django.core.exceptions import ValidationError
 #         }))
 #     is_published = forms.BooleanField(label='Опубликовано?', initial=True)
 #
-#     category = forms.ModelChoiceField(empty_label='Выберете категорию', label='Категория', queryset=Category.objects.all(),
+#     category = forms.ModelChoiceField(empty_label='Выберете категорию',
+#     label='Категория', queryset=Category.objects.all(),
 #                                       widget=forms.Select(
 #                                           attrs={"class": "form-control"}))
 
