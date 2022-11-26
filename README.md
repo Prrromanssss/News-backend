@@ -1,6 +1,6 @@
 # Новостной сайт
 
-## ![flake8 test](https://github.com/Prrromanssss/News_backend/actions/workflows/python-package.yml/badge.svg)
+## ![flake8 test](https://github.com/Prrromanssss/News-backend/actions/workflows/python-package.yml/badge.svg)
 
 Данный проект представляет из себя новостной сайт, написанный на фреймворке Django
 
@@ -8,7 +8,7 @@
 Для его __запуска__ нам необходимо:
 * склонировать проект из гитхаба
 ```commandline
-git clone https://github.com/Prrromanssss/LyceumYandex_django.git
+git clone https://github.com/Prrromanssss/News-backend.git
 ```
 * поставить виртуальное окружение
 ### Mac OS
